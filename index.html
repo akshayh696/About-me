@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Akshay Hire - Director of Platform Engineering</title>
+    <meta content="Portfolio and Resume of Akshay Hire - Director of Platform Engineering, Cloud Architect, API Strategist" name="description">
+    <meta content="Akshay Hire, Platform Engineering, Cloud Architect, DevOps, Kubernetes, AWS, GCP" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <style>
+        :root {
+            --bg: #040404;
+            --bg-overlay: rgba(0, 0, 0, 0.8);
+            --bg-soft: rgba(0, 0, 0, 0.9);
+            --panel: rgba(255, 255, 255, 0.08);
+            --panel-strong: rgba(255, 255, 255, 0.12);
+            --text: #ffffff;
+            --muted: rgba(255, 255, 255, 0.8);
+            --heading: #ffffff;
+            --accent: #18d26e;
+            --accent-strong: #20ff7b;
+            --shadow: rgba(0, 0, 0, 0.35);
+            --placeholder-1: #1b2430;
+            --placeholder-2: #0b1925;
+            --placeholder-3: #18d26e;
+        }
+
+        body.light-mode {
+            --bg: #f4f7fb;
+            --bg-overlay: rgba(255, 255, 255, 0.76);
+            --bg-soft: rgba(255, 255, 255, 0.92);
+            --panel: rgba(255, 255, 255, 0.96);
+            --panel-strong: rgba(15, 23, 42, 0.14);
+            --text: #111827;
+            --muted: #334155;
+            --heading: #0b1323;
+            --accent: #0b5ed7;
+            --accent-strong: #083d99;
+            --shadow: rgba(15, 23, 42, 0.14);
+            --placeholder-1: #dfeafc;
+            --placeholder-2: #bfd7ff;
+            --placeholder-3: #3d7af5;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            position: relative;
+            background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop') center center no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        @media(min-width: 1200px) {
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background: rgba(0, 0, 0, 0.2);
+                z-index: -1;
+            }
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            color: var(--accent-strong);
+            text-decoration: none;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Poppins", sans-serif;
+        }
+        #header {
+            transition: ease-in-out 0.3s;
+            position: relative;
+            min-height: 64vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 18px;
+            padding-bottom: 12px;
+        }
+        #header .container {
+            max-width: 960px;
+            margin-bottom: 0;
+        }
+        #header h1 {
+            font-size: 48px;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            font-weight: 700;
+            font-family: "Poppins", sans-serif;
+        }
+        #header h1 a, #header h1 {
+            color: var(--heading);
+        }
+        #header h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: var(--muted);
+            font-family: "Raleway", sans-serif;
+        }
+        #header h2 span {
+            color: var(--heading);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 2px;
+        }
+        .social-links {
+            margin-top: 18px;
+        }
+        .social-links a {
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--panel);
+            color: var(--text);
+            line-height: 1;
+            margin-right: 8px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+        .theme-toggle {
+            border: 1px solid var(--panel-strong);
+            background: var(--panel);
+            color: var(--text);
+            border-radius: 999px;
+            padding: 10px 16px;
+            font-weight: 700;
+            transition: 0.3s;
+            margin-left: 8px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-1px);
+        }
+        .navbar {
+            padding: 0;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .navbar li {
+            position: relative;
+        }
+        .navbar a, .navbar a:focus {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--muted);
+            white-space: nowrap;
+            transition: 0.3s;
+        }
+        .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+            color: var(--heading);
+            background: var(--panel);
+            border-radius: 4px;
+        }
+        section {
+            padding: 18px 0 32px;
+            overflow: hidden;
+            background-color: var(--bg-soft);
+            min-height: 100vh;
+            display: none;
+            opacity: 0;
+            transform: translateY(14px);
+            transition: opacity 0.45s ease, transform 0.45s ease;
+        }
+        section.section-show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            animation: sectionReveal 0.6s ease-out both;
+        }
+
+        @keyframes sectionReveal {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal-item {
+            opacity: 0;
+            transform: translateY(22px) scale(0.985);
+            transition: opacity 0.65s ease, transform 0.65s ease, box-shadow 0.3s ease;
+        }
+        .reveal-item.is-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .reveal-delay-1 { transition-delay: 0.06s; }
+        .reveal-delay-2 { transition-delay: 0.12s; }
+        .reveal-delay-3 { transition-delay: 0.18s; }
+        .reveal-delay-4 { transition-delay: 0.24s; }
+        .reveal-delay-5 { transition-delay: 0.3s; }
+        .section-title {
+            margin-bottom: 18px;
+        }
+        .section-title h2 {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0;
+            line-height: 1px;
+            margin: 0 0 16px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--muted);
+            font-family: "Poppins", sans-serif;
+        }
+        .section-title h2::after {
+            content: "";
+            width: 120px;
+            height: 1px;
+            display: inline-block;
+            background: var(--accent);
+            margin: 4px 10px;
+        }
+        .section-title p {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            color: var(--heading);
+        }
+        .about-me .content h3 {
+            font-weight: 700;
+            font-size: 26px;
+            color: var(--accent);
+        }
+        .about-me .content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .about-me .content ul li {
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+        }
+        .about-me .content ul strong {
+            margin-right: 10px;
+        }
+        .about-me .content ul i {
+            font-size: 16px;
+            margin-right: 5px;
+            color: var(--accent);
+        }
+        .profile-placeholder {
+            position: relative;
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            aspect-ratio: 4 / 5;
+            border-radius: 28px;
+            background: linear-gradient(135deg, var(--placeholder-1), var(--placeholder-2));
+            border: 1px solid var(--panel-strong);
+            box-shadow: 0 18px 40px var(--shadow);
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .profile-placeholder::before {
+            content: "";
+            position: absolute;
+            inset: 12% 22% 28% 22%;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(255,255,255,0.18) 30%, rgba(255,255,255,0.04) 60%, transparent 100%);
+            animation: floatGlow 4s ease-in-out infinite alternate;
+        }
+        .profile-placeholder::after {
+            content: "";
+            position: absolute;
+            left: 14%;
+            right: 14%;
+            bottom: -8%;
+            height: 52%;
+            border-radius: 45% 45% 0 0;
+            background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.04));
+            border: 1px solid rgba(255,255,255,0.14);
+        }
+        .profile-badge {
+            position: absolute;
+            right: 18px;
+            bottom: 18px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.28);
+            border: 1px solid rgba(255,255,255,0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--heading);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+        }
+        @keyframes floatGlow {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(-10px) scale(1.04); }
+        }
+        .skills .progress {
+            height: 60px;
+            display: block;
+            background: none;
+            border-radius: 0;
+            margin-bottom: 14px;
+            transition: transform 0.25s ease, filter 0.25s ease;
+        }
+        .skills .progress:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.04);
+        }
+        .skills .progress .skill {
+            padding: 0;
+            margin: 0 0 6px 0;
+            text-transform: uppercase;
+            display: block;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            color: var(--text);
+        }
+        .skills .progress .skill val {
+            float: right;
+            font-style: normal;
+        }
+        .skills .progress-bar-wrap {
+            background: rgba(255, 255, 255, 0.2);
+            height: 10px;
+        }
+        .skills .progress-bar {
+            width: 1px;
+            height: 10px;
+            transition: 0.9s;
+            background-color: var(--accent);
+        }
+        .resume .resume-title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 16px;
+            margin-bottom: 18px;
+            color: var(--heading);
+        }
+        .resume .resume-item {
+            padding: 0 0 18px 20px;
+            margin-top: -2px;
+            border-left: 2px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+        .resume .resume-item:hover {
+            transform: translateX(4px);
+            border-color: var(--accent);
+        }
+        .resume .resume-item h4 {
+            line-height: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .resume .resume-item h5 {
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 5px 15px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .resume .resume-item ul {
+            padding-left: 20px;
+        }
+        .resume .resume-item ul li {
+            padding-bottom: 10px;
+        }
+        .resume .resume-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -9px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            border: 2px solid var(--accent);
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .contact .info-box {
+            color: var(--text);
+            background: var(--panel);
+            padding: 24px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            border: 1px solid transparent;
+        }
+        .contact .info-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 28px rgba(15, 23, 42, 0.12);
+            border-color: var(--panel-strong);
+        }
+        .contact .info-box i {
+            font-size: 32px;
+            color: var(--accent);
+            border-radius: 50%;
+            padding: 8px;
+            border: 2px dotted var(--accent);
+            float: left;
+        }
+        .contact .info-box h3 {
+            font-size: 20px;
+            color: var(--muted);
+            font-weight: 700;
+            margin: 0 0 0 60px;
+            font-family: "Poppins", sans-serif;
+        }
+        .contact .info-box p {
+            padding: 0;
+            color: var(--text);
+            line-height: 24px;
+            font-size: 14px;
+            margin: 0 0 0 60px;
+        }
+        .nudge-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--accent);
+            color: #ffffff;
+            border: 1px solid var(--accent-strong);
+            border-radius: 999px;
+            padding: 12px 22px;
+            font-weight: 700;
+            margin-top: 12px;
+            transition: 0.3s;
+            box-shadow: 0 8px 18px rgba(11, 94, 215, 0.18);
+        }
+        .nudge-button:hover {
+            background: var(--accent-strong);
+            color: #ffffff;
+        }
+        .nudge-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.78);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            padding: 20px;
+        }
+        .nudge-modal.visible {
+            display: flex;
+        }
+        .nudge-modal-card {
+            width: min(100%, 440px);
+            background: var(--bg-soft);
+            border: 1px solid var(--panel-strong);
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 20px 50px var(--shadow);
+        }
+        .nudge-modal-card h3 {
+            margin-bottom: 12px;
+            color: var(--heading);
+        }
+        .nudge-modal-card p {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+        .nudge-modal-card input {
+            width: 100%;
+            border: 1px solid var(--panel-strong);
+            background: rgba(255,255,255,0.04);
+            color: var(--text);
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+        }
+        .nudge-modal-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+        .nudge-modal-actions button {
+            border-radius: 10px;
+            padding: 10px 16px;
+            border: none;
+            font-weight: 600;
+        }
+        .nudge-cancel {
+            background: rgba(255,255,255,0.08);
+            color: var(--text);
+        }
+        .nudge-submit {
+            background: var(--accent);
+            color: #06130c;
+        }
+        .nudge-status {
+            margin-top: 12px;
+            color: var(--accent);
+            min-height: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+
+    <section id="about" class="about">
+        <div id="about-content" class="about-me container"></div>
+        <div class="skills container mt-5">
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>Technical Proficiencies</p>
+            </div>
+            <div id="skills-content" class="row skills-content"></div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <div id="resume-content" class="container"></div>
+    </section>
+
+    <section id="services" class="services">
+        <div id="services-content" class="container"></div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div id="contact-content" class="container"></div>
+    </section>
+
+    <div id="nudge-modal" class="nudge-modal" aria-modal="true" role="dialog">
+        <div class="nudge-modal-card">
+            <h3>Nudge Me</h3>
+            <p>Enter your WhatsApp username or number and I’ll receive a message with your contact details.</p>
+            <form id="nudge-form">
+                <input id="nudge-phone" type="text" name="phone" placeholder="e.g. +65 9123 4567 or your WhatsApp username" required>
+                <div class="nudge-modal-actions">
+                    <button type="button" class="nudge-cancel">Cancel</button>
+                    <button type="submit" class="nudge-submit">Send</button>
+                </div>
+                <div id="nudge-status" class="nudge-status"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="content.js"></script>
+
+    <!-- Template Main JS File -->
+    <script>
+        (function() {
+            "use strict";
+
+            const select = (el, all = false) => {
+                el = el.trim()
+                if (all) {
+                    return [...document.querySelectorAll(el)]
+                } else {
+                    return document.querySelector(el)
+                }
+            }
+
+            const on = (type, el, listener, all = false) => {
+                let selectEl = select(el, all)
+                if (selectEl) {
+                    if (all) {
+                        selectEl.forEach(e => e.addEventListener(type, listener))
+                    } else {
+                        selectEl.addEventListener(type, listener)
+                    }
+                }
+            }
+
+            const revealSectionItems = (section) => {
+                const items = section ? section.querySelectorAll('.reveal-item') : document.querySelectorAll('.reveal-item');
+                items.forEach((item) => item.classList.remove('is-visible'));
+
+                items.forEach((item, index) => {
+                    requestAnimationFrame(() => {
+                        setTimeout(() => {
+                            item.classList.add('is-visible');
+                        }, index * 80);
+                    });
+                });
+            };
+
+            const showSection = (hash) => {
+                const normalizedHash = (hash && hash.startsWith('#')) ? hash : '#about';
+                const targetSelector = normalizedHash === '#header' ? '#about' : normalizedHash;
+                const targetSection = select(targetSelector)
+
+                if (targetSection) {
+                    const sections = select('section', true)
+                    sections.forEach(item => item.classList.remove('section-show'))
+                    targetSection.classList.add('section-show')
+                    revealSectionItems(targetSection)
+                }
+
+                const navLinks = select('.navbar .nav-link', true)
+                navLinks.forEach(link => {
+                    const isActive = link.getAttribute('href') === normalizedHash ||
+                        (normalizedHash === '#header' && link.getAttribute('href') === '#about')
+                    link.classList.toggle('active', isActive)
+                })
+            }
+
+            const applyTheme = (isLight) => {
+                document.body.classList.toggle('light-mode', isLight);
+                const toggle = document.getElementById('theme-toggle');
+                if (toggle) {
+                    toggle.innerHTML = isLight ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+                    toggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+                }
+                localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
+            };
+
+            document.addEventListener('DOMContentLoaded', () => {
+                if (window.renderHeader) renderHeader();
+                if (window.renderAbout) renderAbout();
+                if (window.renderResume) renderResume();
+                if (window.renderServices) renderServices();
+                if (window.renderContact) renderContact();
+
+                const savedTheme = localStorage.getItem('portfolio-theme');
+                const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+                applyTheme(savedTheme ? savedTheme === 'light' : prefersLight);
+
+                showSection(window.location.hash || '#about');
+                revealItems();
+            });
+
+            document.addEventListener('click', function(e) {
+                const toggle = e.target.closest('#theme-toggle');
+                if (toggle) {
+                    const isLight = !document.body.classList.contains('light-mode');
+                    applyTheme(isLight);
+                    return;
+                }
+
+                const link = e.target.closest('.nav-link');
+                if (!link) return;
+
+                const href = link.getAttribute('href');
+                if (!href || !href.startsWith('#')) return;
+
+                e.preventDefault();
+                const nextHash = href === '#header' ? '#about' : href;
+                history.replaceState(null, '', nextHash);
+                showSection(nextHash)
+            });
+
+            window.addEventListener('hashchange', () => {
+                showSection(window.location.hash || '#about')
+            });
+
+            const revealItems = () => {
+                const firstVisibleSection = document.querySelector('section.section-show') || document.querySelector('section');
+                if (firstVisibleSection) {
+                    revealSectionItems(firstVisibleSection);
+                }
+            };
+
+            const nudgeModal = document.getElementById('nudge-modal');
+            const nudgeForm = document.getElementById('nudge-form');
+            const nudgeStatus = document.getElementById('nudge-status');
+            const nudgeInput = document.getElementById('nudge-phone');
+
+            const openNudgeModal = () => {
+                if (nudgeModal) {
+                    nudgeModal.classList.add('visible');
+                    setTimeout(() => nudgeInput && nudgeInput.focus(), 50);
+                }
+            };
+
+            const closeNudgeModal = () => {
+                if (nudgeModal) {
+                    nudgeModal.classList.remove('visible');
+                    nudgeStatus.textContent = '';
+                    if (nudgeInput) nudgeInput.value = '';
+                }
+            };
+
+            document.addEventListener('click', (event) => {
+                if (event.target && event.target.classList.contains('nudge-button')) {
+                    openNudgeModal();
+                }
+
+                if (event.target && event.target.classList.contains('nudge-cancel')) {
+                    closeNudgeModal();
+                }
+
+                if (event.target && event.target === nudgeModal) {
+                    closeNudgeModal();
+                }
+            });
+
+            if (nudgeForm) {
+                nudgeForm.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    const rawPhone = (nudgeInput && nudgeInput.value || '').trim();
+                    const normalizedPhone = rawPhone.replace(/\s+/g, '');
+
+                    if (!normalizedPhone || normalizedPhone.length < 8) {
+                        nudgeStatus.textContent = 'Please enter a valid WhatsApp-enabled phone number.';
+                        return;
+                    }
+
+                    const ownerUsername = window.portfolioContent?.contact?.whatsappUsername || 'akshaysrc';
+                    const ownerName = window.portfolioContent?.header?.name || 'Akshay';
+                    const message = `Hi ${ownerName}, someone is interested in contacting you. Their WhatsApp contact is: ${normalizedPhone}`;
+                    const whatsappUrl = `https://wa.me/${ownerUsername}?text=${encodeURIComponent(message)}`;
+
+                    nudgeStatus.textContent = 'Opening WhatsApp…';
+                    window.open(whatsappUrl, '_blank');
+                    setTimeout(() => closeNudgeModal(), 600);
+                });
+            }
+
+            let skilsContent = select('.skills-content');
+            if (skilsContent) {
+                let progressBars = select('.progress-bar', true);
+                progressBars.forEach((el) => {
+                    el.style.width = el.getAttribute('aria-valuenow') + '%';
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
