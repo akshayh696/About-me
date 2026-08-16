@@ -1,38 +1,51 @@
 window.portfolioContent = {
   header: {
     name: 'Akshay Hire',
-    role: 'Director of Platform Engineering',
+    shortName: 'Akshay H.',
+    role: 'Head of Solution Engineering, APAC',
     accent: 'Cloud Architect',
     genericrole: 'Software Architect & Gen AI Platform Designer',
+    tagline: 'Platform Engineering · Cloud Architecture · API Strategy',
+    location: 'Singapore',
+    availability: 'Open to EU Relocation',
     nav: [
-      { label: 'Home', href: '#about', active: true },
       { label: 'About', href: '#about' },
-      { label: 'Resume', href: '#resume' },
-      { label: 'Services', href: '#services' },
+      { label: 'Experience', href: '#experience' },
+      { label: 'Expertise', href: '#expertise' },
       { label: 'Contact', href: '#contact' }
     ],
     social: [
       { platform: 'linkedin', url: 'https://linkedin.com/in/akshay-h', icon: 'fab fa-linkedin-in' },
-      { platform: 'email', url: 'mailto:akshay_hire@outlook.com', icon: 'fas fa-envelope' },
-      { platform: 'github', url: 'https://github.com/akshayh696', icon: 'fab fa-github' }
+      { platform: 'github', url: 'https://github.com/akshayh696', icon: 'fab fa-github' },
+      { platform: 'email', url: 'mailto:akshay_hire@outlook.com', icon: 'fas fa-envelope' }
     ]
   },
+
+  stats: [
+    { value: '14+', label: 'Years Experience' },
+    { value: 'APAC', label: 'Region Lead' },
+    { value: '3', label: 'Cloud Platforms' },
+    { value: '14+', label: 'Enterprise Clients' }
+  ],
+
   about: {
     title: 'Learn More About Me',
+    subtitle: 'Software Architect & Gen AI Platform Designer',
     intro: 'Strategic and hands-on technology leader with 14+ years of experience building and scaling enterprise-grade Platform Engineering and Cloud Infrastructure.',
     image: '',
     alt: 'Akshay Hire',
     details: [
-      { label: 'Phone', value: '+65 9275 5920' },
       { label: 'City', value: 'Singapore (Open to EU Relocation)' },
-      { label: 'Degree', value: 'Masters in Tech (Software Eng) - NUS' },
+      { label: 'Degree', value: 'Masters in Tech (Software Eng) — NUS' },
       { label: 'Email', value: 'akshay_hire@outlook.com' },
       { label: 'Freelance', value: 'Available' },
-      { label: 'Certifications', value: 'AWS Pro, CKA, TOGAF' }
+      { label: 'Certifications', value: 'AWS Pro, CKA, TOGAF' },
+      { label: 'Contact', value: 'Use Notify Me below' }
     ],
-    summary: 'Expert in leading cross-functional teams, driving DevSecOps/MLOps transformations, and architecting multi-cloud solutions (AWS/GCP/Azure). Proven track record in establishing Internal Developer Platforms (IDP) that accelerate product delivery while maintaining rigorous security and governance standards.'
+    summary: 'Expert in leading cross-functional teams, driving DevSecOps/MLOps transformations, and architecting multi-cloud solutions (AWS/GCP/Azure). Proven track record in establishing Internal Developer Platforms (IDP) that accelerate product delivery while maintaining rigorous security and governance standards. Currently leading Solution Engineering across APAC at Wise, helping financial institutions integrate global payment infrastructure through REST APIs, OAuth2, and scalable platform design.'
   },
-  skills: [
+
+  skillLevels: [
     { name: 'Cloud Architecture (AWS, GCP, Azure)', value: 95 },
     { name: 'Platform Engineering & IDP', value: 90 },
     { name: 'Kubernetes & Container Orchestration', value: 90 },
@@ -40,38 +53,57 @@ window.portfolioContent = {
     { name: 'CI/CD & GitOps (ArgoCD, GitLab)', value: 85 },
     { name: 'Java / Python / Go / Node.js', value: 85 }
   ],
+
+  skills: [
+    { name: 'Cloud Architecture', featured: true },
+    { name: 'Platform Engineering', featured: true },
+    { name: 'API Strategy & Governance', featured: true },
+    { name: 'Kubernetes & Containers', featured: true },
+    { name: 'AWS / GCP / Azure' },
+    { name: 'CI/CD & GitOps' },
+    { name: 'Internal Developer Platforms' },
+    { name: 'MLOps & Data Pipelines' },
+    { name: 'REST / OpenAPI / OAuth2' },
+    { name: 'Java / Python / Go' },
+    { name: 'Microservices Architecture' },
+    { name: 'DevSecOps' },
+    { name: 'System Integration' },
+    { name: 'Payment Infrastructure' },
+    { name: 'Spring Boot' },
+    { name: 'Docker' }
+  ],
+
   resume: {
     summary: {
       name: 'Akshay Hire',
-      text: 'Innovative and data-driven Director of Platform Engineering with 14+ years of experience designing and developing enterprise cloud architecture and distributed systems.',
+      text: 'Innovative and data-driven technology leader with 14+ years of experience designing and developing enterprise cloud architecture and distributed systems.',
       details: [
         'Singapore (Open to EU Relocation)',
-        '+65 9275 5920',
         'akshay_hire@outlook.com'
       ]
     },
     education: [
       {
-        title: 'Masters in Technology - Software Engineering',
-        period: '2019',
+        title: 'Masters in Technology — Software Engineering',
+        period: '2018 – 2019',
         org: 'National University of Singapore (NUS)'
       },
       {
         title: 'Masters in Business Administration',
-        period: '2017',
+        period: '2014 – 2017',
         org: 'University of Mumbai'
       },
       {
         title: 'Bachelor of Engineering',
-        period: '2011',
+        period: '2007 – 2011',
         org: 'University of Mumbai'
       }
     ],
     experience: [
       {
         title: 'Head of Solution Engineering, APAC',
-        period: '04/2025 – Present',
-        company: 'Wise • Singapore',
+        period: 'Apr 2025 – Present',
+        company: 'Wise · Singapore',
         responsibilities: [
           'Lead a team of solutions engineers delivering complex REST API integrations for major financial institutions across APAC.',
           'Provide technical consulting on RESTful API design, OpenAPI, OAuth2, and platform scalability.'
@@ -79,8 +111,8 @@ window.portfolioContent = {
       },
       {
         title: 'Head of Platform Engineering & Cloud Architect',
-        period: '08/2022 – 03/2025',
-        company: 'Terrascope • Singapore',
+        period: 'Aug 2022 – Mar 2025',
+        company: 'Terrascope · Singapore',
         responsibilities: [
           'Architected and scaled an Internal Developer Platform (IDP) on AWS, reducing environment provisioning time by 60%.',
           'Built scalable MLOps pipelines on AWS/Azure supporting AI-driven sustainability analytics.'
@@ -88,22 +120,34 @@ window.portfolioContent = {
       },
       {
         title: 'Product Architect',
-        period: '09/2021 – 08/2022',
-        company: 'Lendlease Digital • Singapore',
+        period: 'Sep 2021 – Aug 2022',
+        company: 'Lendlease Digital · Singapore',
         responsibilities: [
           'Architected the "Podium" SaaS platform on GCP integrating Big Data, AI/ML, and IoT.'
         ]
       },
       {
         title: 'Solutions Architect',
-        period: '07/2019 – 09/2021',
-        company: 'Bambu B2B Wealth Tech • Singapore',
+        period: 'Jul 2019 – Sep 2021',
+        company: 'Bambu B2B Wealth Tech · Singapore',
         responsibilities: [
           'Designed greenfield wealth-tech platform serving 14+ financial institutions.'
         ]
       }
     ]
   },
+
+  certifications: [
+    { title: 'AWS', issuer: 'TestDome', date: 'May 2021' },
+    { title: 'Docker', issuer: 'TestDome', date: 'May 2021' },
+    { title: 'Java Design Patterns: Creational', issuer: 'Lynda.com', date: 'Oct 2018' },
+    { title: 'Learning REST APIs', issuer: 'Lynda.com', date: 'Jun 2018' },
+    { title: 'Cloud Architecture: Design Decisions', issuer: 'Lynda.com', date: 'May 2018' },
+    { title: 'Learning Cloud Computing: Public Cloud Platforms', issuer: 'Lynda.com', date: 'May 2018' },
+    { title: 'Learning Java Threads', issuer: 'Lynda.com', date: 'Apr 2018' },
+    { title: 'Project Management Foundations: Change', issuer: 'Lynda.com', date: 'Apr 2018' }
+  ],
+
   services: [
     {
       title: 'Cloud & Multi-Cloud Architecture',
@@ -112,329 +156,349 @@ window.portfolioContent = {
     },
     {
       title: 'Internal Developer Platforms (IDP)',
-      icon: 'fas fa-cogs',
+      icon: 'fas fa-layer-group',
       description: 'Building self-service developer portals and automated toolchains to accelerate delivery velocity.'
     },
     {
       title: 'API Strategy & Governance',
       icon: 'fas fa-network-wired',
       description: 'Defining RESTful API standards, OpenAPI specifications, and scalable microservices.'
+    },
+    {
+      title: 'Platform Engineering',
+      icon: 'fas fa-cogs',
+      description: 'End-to-end platform design — from CI/CD pipelines and GitOps to observability and developer experience.'
+    },
+    {
+      title: 'Solution Architecture',
+      icon: 'fas fa-sitemap',
+      description: 'Technical consulting for enterprise integrations, payment infrastructure, and regulated-industry compliance.'
+    },
+    {
+      title: 'MLOps & Data Platforms',
+      icon: 'fas fa-brain',
+      description: 'Scalable ML pipelines and data foundations for AI-driven analytics and real-time event processing.'
     }
   ],
+
   contact: {
     location: 'Singapore (Open to EU Relocation)',
     email: 'akshay_hire@outlook.com',
-    phone: 'Hidden for privacy — use Nudge Me',
-    whatsappUsername: 'akshaysrc',
     social: [
       { platform: 'linkedin', url: 'https://linkedin.com/in/akshay-h', icon: 'fab fa-linkedin-in' },
-      { platform: 'github', url: 'https://github.com/metalhead44', icon: 'fab fa-github' }
+      { platform: 'github', url: 'https://github.com/akshayh696', icon: 'fab fa-github' },
+      { platform: 'email', url: 'mailto:akshay_hire@outlook.com', icon: 'fas fa-envelope' }
     ]
+  },
+
+  /* Notify Me — free WhatsApp via CallMeBot + lead recording via Formspree
+   * Setup: see README.md */
+  notify: {
+    ownerPhone: '6592755920',       // private — used only by CallMeBot, never shown on site
+    callMeBotApiKey: '6135745',
+    formspreeId: ''
   }
 };
 
-function renderHeader() {
-  const header = document.getElementById('header');
-  if (!header) return;
+/* ── Render helpers ── */
 
-  const navLinks = window.portfolioContent.header.nav
-    .map((item) => `<li><a class="nav-link ${item.active ? 'active' : ''}" href="${item.href}">${item.label}</a></li>`)
+function renderNav() {
+  const nav = document.getElementById('site-nav');
+  if (!nav) return;
+
+  const c = window.portfolioContent;
+  const links = c.header.nav
+    .map((item) => `<li><a href="${item.href}">${item.label}</a></li>`)
     .join('');
 
-  const socialLinks = window.portfolioContent.header.social
-    .map((item) => `<a href="${item.url}" target="_blank" class="${item.platform}"><i class="${item.icon}"></i></a>`)
-    .join('');
-
-  header.innerHTML = `
+  nav.innerHTML = `
     <div class="container">
-      <h1><a href="index.html">${window.portfolioContent.header.name}</a></h1>
-      <h2>I'm a passionate <span>${window.portfolioContent.header.genericrole}</span></h2>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          ${navLinks}
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-      <div class="social-links d-inline-flex align-items-center">
-        ${socialLinks}
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color mode"><i class="fas fa-sun"></i></button>
+      <a class="nav-brand" href="#">${c.header.shortName}<span>.</span></a>
+      <ul class="nav-links">${links}</ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle color mode">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
+    </div>
+  `;
+}
+
+function renderHero() {
+  const hero = document.getElementById('hero');
+  if (!hero) return;
+
+  const c = window.portfolioContent;
+  const stats = c.stats
+    .map((s, i) => `
+      <div class="stat-item reveal reveal-delay-${i + 1}">
+        <div class="stat-value">${s.value}</div>
+        <div class="stat-label">${s.label}</div>
+      </div>
+    `).join('');
+
+  const social = c.header.social
+    .map((s) => `<a href="${s.url}" target="_blank" rel="noopener" aria-label="${s.platform}"><i class="${s.icon}"></i></a>`)
+    .join('');
+
+  const profileImage = c.about.image
+    ? `<img src="${c.about.image}" alt="${c.about.alt}">`
+    : `<div class="profile-placeholder"><div class="avatar-icon"><i class="fas fa-user"></i></div></div>`;
+
+  hero.innerHTML = `
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge reveal"><span class="pulse"></span> ${c.header.role}</div>
+          <h1 class="reveal reveal-delay-1">
+            Hi, I'm <span class="gradient-text">${c.header.name.split(' ')[0]}</span>
+          </h1>
+          <p class="hero-role reveal reveal-delay-2">
+            I'm a passionate <span>${c.header.genericrole}</span>
+          </p>
+          <p class="hero-lead reveal reveal-delay-2">${c.about.intro}</p>
+          <div class="hero-cta reveal reveal-delay-3">
+            <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+            <a href="#experience" class="btn btn-ghost"><i class="fas fa-briefcase"></i> View Experience</a>
+          </div>
+          <div class="hero-social reveal reveal-delay-4">${social}</div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-2">
+          <div class="profile-glow"></div>
+          <div class="profile-card">
+            ${profileImage}
+            <div class="location-tag"><i class="fas fa-map-marker-alt"></i> ${c.header.location}</div>
+          </div>
+        </div>
+      </div>
+      <div class="stats-bar">${stats}</div>
     </div>
   `;
 }
 
 function renderAbout() {
-  const about = document.getElementById('about-content');
-  const detailsColumnOne = window.portfolioContent.about.details.slice(0, 3)
-    .map((item) => `<li><i class="bi bi-chevron-right"></i> <strong>${item.label}:</strong> <span>${item.value}</span></li>`)
+  const el = document.getElementById('about-content');
+  if (!el) return;
+
+  const c = window.portfolioContent;
+  const details = c.about.details
+    .map((d) => `<li><i class="fas fa-check-circle"></i><strong>${d.label}:</strong> <span>${d.value}</span></li>`)
     .join('');
-  const detailsColumnTwo = window.portfolioContent.about.details.slice(3)
-    .map((item) => `<li><i class="bi bi-chevron-right"></i> <strong>${item.label}:</strong> <span>${item.value}</span></li>`)
-    .join('');
 
-  if (about) {
-    about.innerHTML = `
-      <div class="section-title">
-        <h2>About</h2>
-        <p>${window.portfolioContent.about.title}</p>
+  el.innerHTML = `
+    <div class="section-header reveal">
+      <span class="section-label">About</span>
+      <h2 class="section-title">${c.about.title}</h2>
+      <p class="section-subtitle">${c.about.subtitle}</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal reveal-delay-1">
+        <h3>${c.about.subtitle}</h3>
+        <p class="about-intro">${c.about.intro}</p>
+        <p>${c.about.summary}</p>
       </div>
-
-      <div class="row align-items-center g-3 reveal-item reveal-delay-1">
-        <div class="col-lg-4">
-          <div class="profile-placeholder" aria-label="${window.portfolioContent.about.alt}">
-            <div class="profile-badge"><i class="fas fa-code"></i></div>
-          </div>
-        </div>
-        <div class="col-lg-8 pt-2 pt-lg-0 content reveal-item reveal-delay-2">
-          <h3>Software Architect &amp; Gen AI Platform Designer</h3>
-          <p class="fst-italic">
-            ${window.portfolioContent.about.intro}
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                ${detailsColumnOne}
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                ${detailsColumnTwo}
-              </ul>
-            </div>
-          </div>
-          <p>
-            ${window.portfolioContent.about.summary}
-          </p>
-        </div>
+      <div class="about-card reveal reveal-delay-2">
+        <h3>Details</h3>
+        <ul class="detail-list">${details}</ul>
       </div>
-    `;
-  }
-
-  const skillsContent = document.getElementById('skills-content');
-  if (skillsContent) {
-    const leftSkills = window.portfolioContent.skills.slice(0, 3)
-      .map((skill, index) => `
-        <div class="progress reveal-item reveal-delay-${index + 1}">
-          <span class="skill">${skill.name} <val>${skill.value}%</val></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="${skill.value}" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      `).join('');
-
-    const rightSkills = window.portfolioContent.skills.slice(3)
-      .map((skill, index) => `
-        <div class="progress reveal-item reveal-delay-${index + 4}">
-          <span class="skill">${skill.name} <val>${skill.value}%</val></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="${skill.value}" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      `).join('');
-
-    skillsContent.innerHTML = `
-      <div class="col-lg-6">${leftSkills}</div>
-      <div class="col-lg-6">${rightSkills}</div>
-    `;
-  }
+    </div>
+  `;
 }
 
-function renderResume() {
-  const resumeContainer = document.getElementById('resume-content');
-  if (!resumeContainer) return;
+function renderSkills() {
+  const el = document.getElementById('skills-content');
+  if (!el) return;
 
-  const summaryList = window.portfolioContent.resume.summary.details
-    .map((item) => `<li>${item}</li>`)
+  const c = window.portfolioContent;
+  const tags = c.skills
+    .map((s) => `<span class="skill-tag${s.featured ? ' featured' : ''}">${s.name}</span>`)
     .join('');
 
-  const educationMarkup = window.portfolioContent.resume.education
-    .map((item, index) => `
-      <div class="resume-item reveal-item reveal-delay-${index + 1}">
-        <h4>${item.title}</h4>
-        <h5>${item.period}</h5>
-        <p><em>${item.org}</em></p>
-      </div>
-    `).join('');
-
-  const experienceMarkup = window.portfolioContent.resume.experience
-    .map((item, index) => `
-      <div class="resume-item reveal-item reveal-delay-${index + 1}">
-        <h4>${item.title}</h4>
-        <h5>${item.period}</h5>
-        <p><em>${item.company}</em></p>
-        <ul>
-          ${item.responsibilities.map((responsibility) => `<li>${responsibility}</li>`).join('')}
-        </ul>
-      </div>
-    `).join('');
-
-  resumeContainer.innerHTML = `
-    <div class="section-title">
-      <h2>Resume</h2>
-      <p>Check My Resume</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <h3 class="resume-title">Summary</h3>
-        <div class="resume-item pb-0">
-          <h4>${window.portfolioContent.resume.summary.name}</h4>
-          <p><em>${window.portfolioContent.resume.summary.text}</em></p>
-          <ul>
-            ${summaryList}
-          </ul>
+  const levels = (c.skillLevels || [])
+    .map((skill, index) => `
+      <div class="skill-bar reveal reveal-delay-${(index % 4) + 1}">
+        <div class="skill-bar-header">
+          <span>${skill.name}</span>
+          <span>${skill.value}%</span>
         </div>
-
-        <h3 class="resume-title">Education</h3>
-        ${educationMarkup}
+        <div class="skill-bar-track">
+          <div class="skill-bar-fill" data-value="${skill.value}"></div>
+        </div>
       </div>
+    `).join('');
 
-      <div class="col-lg-6">
-        <h3 class="resume-title">Professional Experience</h3>
-        ${experienceMarkup}
-      </div>
+  el.innerHTML = `
+    <div class="section-header reveal">
+      <span class="section-label">Skills</span>
+      <h2 class="section-title">Technical Proficiencies</h2>
     </div>
+    <div class="skills-grid reveal reveal-delay-1">${tags}</div>
+    <div class="skill-bars reveal reveal-delay-2">${levels}</div>
+  `;
+
+  requestAnimationFrame(() => {
+    el.querySelectorAll('.skill-bar-fill').forEach((bar) => {
+      bar.style.width = `${bar.dataset.value}%`;
+    });
+  });
+}
+
+function renderExperience() {
+  const el = document.getElementById('experience-content');
+  if (!el) return;
+
+  const c = window.portfolioContent;
+  const summary = c.resume.summary;
+
+  const timeline = c.resume.experience
+    .map((item) => `
+      <div class="timeline-item">
+        <span class="timeline-period">${item.period}</span>
+        <h4>${item.title}</h4>
+        <div class="company">${item.company}</div>
+        <ul>${item.responsibilities.map((r) => `<li>${r}</li>`).join('')}</ul>
+      </div>
+    `).join('');
+
+  const education = c.resume.education
+    .map((item) => `
+      <div class="education-item">
+        <h4>${item.title}</h4>
+        <div class="period">${item.period}</div>
+        <div class="org">${item.org}</div>
+      </div>
+    `).join('');
+
+  el.innerHTML = `
+    <div class="section-header reveal">
+      <span class="section-label">Experience</span>
+      <h2 class="section-title">Career Journey</h2>
+    </div>
+    <div class="summary-card reveal reveal-delay-1">
+      <h3>${summary.name}</h3>
+      <p><em>${summary.text}</em></p>
+      <ul class="summary-details">
+        ${summary.details.map((d) => `<li>${d}</li>`).join('')}
+      </ul>
+    </div>
+    <div class="resume-columns">
+      <div class="reveal reveal-delay-1">
+        <h3 class="section-title" style="font-size:1.25rem;margin-bottom:1.25rem;">Education</h3>
+        <div class="education-list">${education}</div>
+      </div>
+      <div class="timeline reveal reveal-delay-2">${timeline}</div>
+    </div>
+  `;
+}
+
+function renderCertifications() {
+  const el = document.getElementById('certs-content');
+  if (!el) return;
+
+  const cards = window.portfolioContent.certifications
+    .map((cert) => `
+      <div class="cert-card reveal">
+        <h4>${cert.title}</h4>
+        <div class="issuer">${cert.issuer}</div>
+        <div class="date">${cert.date}</div>
+      </div>
+    `).join('');
+
+  el.innerHTML = `
+    <div class="section-header reveal">
+      <span class="section-label">Credentials</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="certs-grid">${cards}</div>
   `;
 }
 
 function renderServices() {
-  const servicesContainer = document.getElementById('services-content');
-  if (!servicesContainer) return;
+  const el = document.getElementById('expertise-content');
+  if (!el) return;
 
   const cards = window.portfolioContent.services
-    .map((service, index) => `
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch reveal-item reveal-delay-${index + 1}">
-        <div class="icon-box w-100 p-4" style="background: rgba(255,255,255,0.08); border-radius: 8px;">
-          <div class="icon" style="color: #18d26e; font-size: 36px; margin-bottom: 15px;"><i class="${service.icon}"></i></div>
-          <h4 style="font-size: 18px; font-weight: 700;"><a href="#" style="color: #fff;">${service.title}</a></h4>
-          <p style="font-size: 14px; color: #ccc;">${service.description}</p>
-        </div>
+    .map((s, i) => `
+      <div class="service-card reveal reveal-delay-${(i % 4) + 1}">
+        <div class="service-icon"><i class="${s.icon}"></i></div>
+        <h4>${s.title}</h4>
+        <p>${s.description}</p>
       </div>
     `).join('');
 
-  servicesContainer.innerHTML = `
-    <div class="section-title">
-      <h2>Services</h2>
-      <p>My Expertise &amp; Offerings</p>
+  el.innerHTML = `
+    <div class="section-header reveal">
+      <span class="section-label">Expertise</span>
+      <h2 class="section-title">What I Do</h2>
+      <p class="section-subtitle">Platform engineering, cloud architecture, and API strategy for enterprise and fintech.</p>
     </div>
-
-    <div class="row">
-      ${cards}
-    </div>
+    <div class="services-grid">${cards}</div>
   `;
 }
 
 function renderContact() {
-  const contactContainer = document.getElementById('contact-content');
-  if (!contactContainer) return;
+  const el = document.getElementById('contact-content');
+  if (!el) return;
 
-  const socialMarkup = window.portfolioContent.contact.social
-    .map((item) => `<a href="${item.url}" target="_blank" class="${item.platform}"><i class="${item.icon}"></i></a>`)
+  const c = window.portfolioContent;
+  const social = c.contact.social
+    .map((s) => `<a href="${s.url}" target="_blank" rel="noopener" aria-label="${s.platform}"><i class="${s.icon}"></i></a>`)
     .join('');
 
-  contactContainer.innerHTML = `
-    <div class="section-title">
-      <h2>Contact</h2>
-      <p>Get in Touch</p>
+  el.innerHTML = `
+    <div class="section-header reveal">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">Interested in platform engineering, cloud architecture, or API strategy? Reach out.</p>
     </div>
-
-    <div class="row mt-2">
-      <div class="col-md-6 d-flex align-items-stretch reveal-item reveal-delay-1">
-        <div class="info-box w-100">
-          <i class="bx bx-map"></i>
-          <h3>My Location</h3>
-          <p>${window.portfolioContent.contact.location}</p>
-        </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal reveal-delay-1">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+        <p>${c.contact.location}</p>
       </div>
-
-      <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch reveal-item reveal-delay-2">
-        <div class="info-box w-100">
-          <i class="bx bx-share-alt"></i>
-          <h3>Social Profiles</h3>
-          <div class="social-links">
-            ${socialMarkup}
-          </div>
-        </div>
+      <div class="contact-card reveal reveal-delay-2">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p><a href="mailto:${c.contact.email}">${c.contact.email}</a></p>
       </div>
-
-      <div class="col-md-6 mt-4 d-flex align-items-stretch reveal-item reveal-delay-3">
-        <div class="info-box w-100">
-          <i class="bx bx-envelope"></i>
-          <h3>Email Me</h3>
-          <p>${window.portfolioContent.contact.email}</p>
-        </div>
+      <div class="contact-card reveal reveal-delay-3">
+        <i class="fas fa-share-alt"></i>
+        <h3>Social</h3>
+        <div class="social-links">${social}</div>
       </div>
-
-      <div class="col-md-6 mt-4 d-flex align-items-stretch reveal-item reveal-delay-4">
-        <div class="info-box w-100">
-          <i class="bx bx-phone-call"></i>
-          <h3>Contact Me</h3>
-          <p>${window.portfolioContent.contact.phone}</p>
-          <button type="button" class="nudge-button">Nudge Me</button>
-        </div>
+      <div class="contact-card reveal reveal-delay-4 contact-notify">
+        <i class="fab fa-whatsapp"></i>
+        <h3>WhatsApp</h3>
+        <p>Send me a message — I'll get notified instantly.</p>
+        <button type="button" class="btn btn-primary nudge-button">
+          <i class="fab fa-whatsapp"></i> Notify Me
+        </button>
       </div>
     </div>
   `;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  renderHeader();
+function renderFooter() {
+  const el = document.getElementById('site-footer');
+  if (!el) return;
+
+  const year = new Date().getFullYear();
+  const name = window.portfolioContent.header.name;
+  el.innerHTML = `<div class="container">&copy; ${year} ${name}. Built with care.</div>`;
+}
+
+function renderAll() {
+  renderNav();
+  renderHero();
   renderAbout();
-  renderResume();
+  renderSkills();
+  renderExperience();
+  renderCertifications();
   renderServices();
   renderContact();
-
-  const select = (el, all = false) => {
-    el = el.trim();
-    if (all) {
-      return [...document.querySelectorAll(el)];
-    }
-    return document.querySelector(el);
-  };
-
-  const on = (type, el, listener, all = false) => {
-    const selectEl = select(el, all);
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach((e) => e.addEventListener(type, listener));
-      } else {
-        selectEl.addEventListener(type, listener);
-      }
-    }
-  };
-
-  on('click', '.nav-link', function (e) {
-    const section = select(this.hash);
-    if (section) {
-      e.preventDefault();
-      const sections = select('section', true);
-      sections.forEach((item) => item.classList.remove('section-show'));
-      section.classList.add('section-show');
-
-      const navLinks = select('.navbar .nav-link', true);
-      navLinks.forEach((item) => item.classList.remove('active'));
-      this.classList.add('active');
-    }
-  }, true);
-
-  const skillsContent = select('.skills-content');
-  if (skillsContent) {
-    const progressBars = select('.progress-bar', true);
-    progressBars.forEach((el) => {
-      el.style.width = el.getAttribute('aria-valuenow') + '%';
-    });
-  }
-
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      const initialNav = select(window.location.hash);
-      if (initialNav) {
-        const sections = select('section', true);
-        sections.forEach((item) => item.classList.remove('section-show'));
-        initialNav.classList.add('section-show');
-      }
-    }
-  });
-});
+  renderFooter();
+}
