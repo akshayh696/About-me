@@ -187,6 +187,10 @@
       if (e.target === modal) close();
     });
 
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('visible')) close();
+    });
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
