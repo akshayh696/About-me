@@ -17,7 +17,7 @@
     name: 'Test User',
     phone: '+6591234567',
     message: 'Hello'
-  }).includes('Test User'));
+  }).includes('Test User & env'));
 
   // Page must not expose owner phone
   const pageText = document.body.innerText;

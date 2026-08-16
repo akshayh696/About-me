@@ -20,7 +20,7 @@
     localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
   };
 
-  /* ── Scroll reveal ── */
+    /* ── Scroll reveal ── */
 
   const initReveal = () => {
     const items = $('.reveal', true);
